@@ -6,11 +6,11 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // "1. Nama"
 // "2. Nama"
 // ...
-const sorter = (names, callsort) => {
-  let sortedNames = callsort(names);
+const sorter = (names, callbackSorting) => {
+  let sortedNames = callbackSorting(names);
   let result = [];
   for (let i = 0; i < sortedNames.length; i++) {
-    result.push(i + 1 + " " + sortedNames[i]);
+    result.push(i + 1 + ". " + sortedNames[i]);
   }
   return result;
 };

@@ -10,7 +10,7 @@ const sorter = (names, callsort) => {
   let sortedNames = callsort(names);
   let result = [];
   for (let i = 0; i < sortedNames.length; i++) {
-    result.push([i + 1] + " " + sortedNames[i]);
+    result.push(i + 1 + " " + sortedNames[i]);
   }
   return result;
 };
